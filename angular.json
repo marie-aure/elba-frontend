@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "elba-frontend"
+    }
+  },
+  "defaultProject": "elba-frontend",
+  "cli": {
+    "analytics": false
+  }
 }
