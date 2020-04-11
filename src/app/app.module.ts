@@ -9,6 +9,10 @@ import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { ErreurComponent } from './components/erreur/erreur.component';
 import { TestComponent } from './components/test/test.component';
+import { ListeFamilleComponent } from './components/liste-famille/liste-famille.component';
+import { MatTableModule } from '@angular/material/table';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -18,12 +22,15 @@ import { TestComponent } from './components/test/test.component';
     FooterComponent,
     MainComponent,
 	    ErreurComponent,
-	    TestComponent
+	    TestComponent,
+	    ListeFamilleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

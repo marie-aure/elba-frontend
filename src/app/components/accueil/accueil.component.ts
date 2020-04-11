@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TitreService } from 'src/app/service/titre.service';
 
 @Component({
   selector: 'app-accueil',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccueilComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titreService:TitreService) { }
 
   ngOnInit() {
+    this.titreService.updateTitle("Elba City");
   }
 
 }

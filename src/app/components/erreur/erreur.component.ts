@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TitreService } from 'src/app/service/titre.service';
 
 @Component({
   selector: 'app-erreur',
@@ -9,9 +10,10 @@ export class ErreurComponent implements OnInit {
 
   titre = 'Erreur'
 
-  constructor() { }
+  constructor(private titreService:TitreService) { }
 
   ngOnInit() {
+    this.titreService.updateTitle("Erreur");
   }
 
 }

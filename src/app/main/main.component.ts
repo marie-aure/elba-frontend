@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TitreService } from '../service/titre.service';
 
 @Component({
   selector: 'app-main',
@@ -6,12 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.less']
 })
 export class MainComponent implements OnInit {
-  titre = 'lol';
+  titre:string;
 
-  constructor() { 
-
-
-
+  constructor(private titreService:TitreService) { 
+    titreService.change.subscribe(data => {this.titre = data});
   }
 
   ngOnInit() {
