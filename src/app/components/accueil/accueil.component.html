@@ -1,1 +1,46 @@
-<p>accueil works!</p>
+<div>
+Famille :
+<table class="infoFamilleTab">
+    <col min-width="200px" />
+    <col min-width="200px" />
+    <tr>
+        <td>Nom :</td>
+        <td>{{ tour.famille.nom }}</td>
+    </tr>
+    <tr>
+        <td>Classe :</td>
+        <td>{{ tour.famille.classe}}</td>
+    </tr>
+     <tr>
+        <td>Génération :</td>
+        <td>{{ tour.famille.generation}}</td>
+    </tr>
+    <tr>
+        <td>Chef de famille :</td>
+        <td>{{ tour.famille.chef.prenom}} {{ tour.famille.chef.nom }}</td>
+    </tr>    <tr>
+        <td>Conjoint :</td>
+        <td>{{ tour.famille.chef.prenomConjoint}} ({{ tour.famille.chef.nomOrigineConjoint}}) {{ tour.famille.chef.nomConjoint}}</td>
+    </tr>
+</table>
+
+Tour en cours :
+
+<table class="infoFamilleTab">
+    <col min-width="200px" />
+    <col min-width="200px" />
+     <tr>
+        <td>Numéro :</td>
+        <td>{{ tour.numero }}</td>
+    </tr>
+    <tr>
+        <td>Semaine :</td>
+        <td>{{ tour.semaine }}</td>
+    </tr>
+    <tr>
+        <td>Argent In Game en début de tour :</td>
+        <td>{{ tour.famille.argentIG }}</td>
+    </tr>
+</table>
+
+</div>

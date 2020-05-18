@@ -13,7 +13,6 @@ export class ListeFamilleComponent implements OnInit {
 
   lFamilles:Famille[];
   dataSource = new MatTableDataSource(this.lFamilles);
-  test:String;
   displayedColumns:String[] = [
     "id",
     "nom",
