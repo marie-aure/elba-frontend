@@ -28,4 +28,18 @@ export class FamilleService {
     ); 
   }
 
+/*   findFamilleEnCours(): Observable<Famille> {
+    return this.http.get<Famille>("http://localhost:8080/api/famille/getFamilleEnCours").pipe(
+      map(data => new Famille(
+        data.id,
+        data.nom,
+        data.generation,
+        data.argentIG,
+        data.chef,
+        data.lMembres,
+        data.lMembresOrigine
+      ))
+    );
+  } */
+
 }

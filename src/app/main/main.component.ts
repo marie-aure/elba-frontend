@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TitreService } from '../service/titre.service';
+import { TransverseService } from '../service/transverse.service';
 
 @Component({
   selector: 'app-main',
@@ -9,8 +9,8 @@ import { TitreService } from '../service/titre.service';
 export class MainComponent implements OnInit {
   titre:string;
 
-  constructor(private titreService:TitreService) { 
-    titreService.change.subscribe(data => {this.titre = data});
+  constructor(private transverseService:TransverseService) { 
+    transverseService.change.subscribe(data => {this.titre = data});
   }
 
   ngOnInit() {

@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { FamilleService } from 'src/app/service/famille.service';
 import { Famille } from 'src/app/model/famille';
-import { TitreService } from 'src/app/service/titre.service';
+import { TransverseService } from 'src/app/service/transverse.service';
 import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
@@ -13,17 +13,16 @@ export class ListeFamilleComponent implements OnInit {
 
   lFamilles:Famille[];
   dataSource = new MatTableDataSource(this.lFamilles);
-  test:String;
   displayedColumns:String[] = [
     "id",
     "nom",
     "generation",
     "chef"];
 
-  constructor(private titreService:TitreService, private familleService:FamilleService) { }
+  constructor(private transverseService:TransverseService, private familleService:FamilleService) { }
 
   ngOnInit() {
-    this.titreService.updateTitle("Liste des familles");
+    this.transverseService.updateTitle("Liste des familles");
     this.familleService.findAllFamille().subscribe(data => this.lFamilles = data);
     this.dataSource.data = this.lFamilles;
   }

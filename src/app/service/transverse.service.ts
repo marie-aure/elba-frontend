@@ -4,7 +4,7 @@ import { Observable, Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class TitreService {
+export class TransverseService {
 
 private emitChangeTitre = new Subject<string>();
 
