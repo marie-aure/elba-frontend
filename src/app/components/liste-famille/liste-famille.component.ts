@@ -17,6 +17,7 @@ export class ListeFamilleComponent implements OnInit {
     "id",
     "nom",
     "generation",
+    "classe",
     "chef"];
 
   constructor(private transverseService:TransverseService, private familleService:FamilleService) { }

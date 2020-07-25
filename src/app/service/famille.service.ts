@@ -19,6 +19,7 @@ export class FamilleService {
             jsonItem.id,
             jsonItem.nom,
             jsonItem.generation,
+            jsonItem.classe,
             jsonItem.argentIG,
             jsonItem.chef,
             jsonItem.lMembres,
