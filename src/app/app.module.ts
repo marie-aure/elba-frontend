@@ -12,6 +12,9 @@ import { TestComponent } from './components/test/test.component';
 import { ListeFamilleComponent } from './components/liste-famille/liste-famille.component';
 import { MatTableModule } from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TourSuivantComponent } from './components/tour-suivant/tour-suivant.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -23,14 +26,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MainComponent,
 	    ErreurComponent,
 	    TestComponent,
-	    ListeFamilleComponent
+	    ListeFamilleComponent,
+	    TourSuivantComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     MatTableModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

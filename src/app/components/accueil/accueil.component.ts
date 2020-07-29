@@ -17,7 +17,7 @@ export class AccueilComponent implements OnInit {
 
   ngOnInit() {
     this.transverseService.updateTitle("Elba City");
-    this.tourService.findTourEnCours().subscribe(data => {console.log(data); this.tour = data;});
+    this.tourService.findTourEnCours().subscribe(data => {console.log(data); this.tour = data;});  
   }
 
 }

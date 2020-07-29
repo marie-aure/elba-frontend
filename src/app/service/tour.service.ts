@@ -22,4 +22,19 @@ export class TourService {
     ));
   }
 
+  /* endTourEnCours(argentIG:number):Observable<Tour>{
+    console.log('here');
+    console.log("http://localhost:8080/api/tour/endTourEnCours/"+argentIG);
+    return this.http.get<Tour>("http://localhost:8080/api/tour/endTourEnCours").pipe(
+      map(data => new Tour(
+        data.numero,
+        data.semaine,
+       data.famille
+      )
+    ));
+
+  } */
+  endTourEnCours(argentIG: number){
+    return this.http.get("http://localhost:8080/api/tour/endTourEnCours/"+argentIG);
+  }
 }

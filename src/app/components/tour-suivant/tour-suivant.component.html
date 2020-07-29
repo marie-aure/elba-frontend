@@ -1,5 +1,17 @@
 <div>
 
-    Argent IG à la fin du tour : djdjdj
 
+    <form [formGroup]="tourSuivantForm" (ngSubmit)="onSubmit(tourSuivantForm.value)">
+      
+        <div>
+          <label for="argentIG">
+            Argent IG à la fin du tour :
+          </label>
+          <input id="argentIG" type="text" formControlName="argentIG">
+        </div>
+      
+       
+        <button class="dark-button" type="submit">Confirmer</button>
+        <button class="dark-button" type="submit" (click)="cancel()">Annuler</button>
+      </form>
 </div>
