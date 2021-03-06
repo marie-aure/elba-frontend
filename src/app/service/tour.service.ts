@@ -17,7 +17,7 @@ export class TourService {
       map(data => new Tour(
         data.numero,
         data.semaine,
-       data.famille
+        data.famille
       )
     ));
   }

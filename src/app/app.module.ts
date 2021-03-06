@@ -12,6 +12,7 @@ import { TestComponent } from './components/test/test.component';
 import { ListeFamilleComponent } from './components/liste-famille/liste-famille.component';
 import { MatTableModule } from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GestionFinanceComponent } from './components/finance/gestion-finance/gestion-finance.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MainComponent,
 	    ErreurComponent,
 	    TestComponent,
-	    ListeFamilleComponent
+	    ListeFamilleComponent,
+	    GestionFinanceComponent
   ],
   imports: [
     BrowserModule,

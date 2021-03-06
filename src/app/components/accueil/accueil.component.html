@@ -15,13 +15,14 @@ Famille :
         <td>Génération :</td>
         <td>{{ tour.famille.generation}}</td>
     </tr>
-    <tr>
+     <tr>
         <td>Chef de famille :</td>
-        <td>{{ tour.famille.chef.prenom}} {{ tour.famille.chef.nom }}</td>
-    </tr>    <tr>
-        <td>Conjoint :</td>
-        <td>{{ tour.famille.chef.prenomConjoint}} ({{ tour.famille.chef.nomOrigineConjoint}}) {{ tour.famille.chef.nomConjoint}}</td>
+        <td>{{ tour.famille.chef?.prenom}} {{ tour.famille.chef?.nom }}</td>
     </tr>
+    <tr>
+        <td>Conjoint :</td>
+        <td>{{ tour.famille.chef?.prenomConjoint}} ({{ tour.famille.chef?.nomOrigineConjoint}}) {{ tour.famille.chef?.nomConjoint}}</td>
+    </tr> 
 </table>
 
 Tour en cours :
@@ -42,5 +43,9 @@ Tour en cours :
         <td>{{ tour.famille.argentIG }}</td>
     </tr>
 </table>
+
+<div class="dark-button">
+    <a routerLink="../finances" routerLinkActive="active">Gestion des finances</a>
+</div>
 
 </div>

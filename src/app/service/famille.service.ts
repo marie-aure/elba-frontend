@@ -23,7 +23,7 @@ export class FamilleService {
             jsonItem.argentIG,
             jsonItem.chef,
             jsonItem.lMembres,
-            jsonItem.lMembresOrigine
+            jsonItem.lMembresOrigine 
           ))
       )
     ); 

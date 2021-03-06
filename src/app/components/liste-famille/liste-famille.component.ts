@@ -20,12 +20,14 @@ export class ListeFamilleComponent implements OnInit {
     "classe",
     "chef"];
 
+
   constructor(private transverseService:TransverseService, private familleService:FamilleService) { }
 
   ngOnInit() {
     this.transverseService.updateTitle("Liste des familles");
     this.familleService.findAllFamille().subscribe(data => this.lFamilles = data);
-    this.dataSource.data = this.lFamilles;
+      this.dataSource.data = this.lFamilles;
+
   }
 
 }
